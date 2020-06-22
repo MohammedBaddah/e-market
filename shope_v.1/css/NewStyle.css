@@ -1,0 +1,154 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 12, 2020, 10:56:52 PM
+    Author     : User
+*/
+body{
+    overflow: hidden;
+}
+
+.myNavBar{
+    border-bottom: #ff6600 1.5px solid; 
+    background-color: #f9f9f9; 
+    box-shadow: 0px 0px 2px 0.5px rgba(0,0,0,0.6);
+    width: 100%;   
+    z-index: 10001;
+}
+.tabcontent {
+  display: none;
+ 
+ animation: fadeEffect 1s; /* Fading effect takes 1 second */  
+}
+
+ 
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+.wrapper{
+    width: 100%;
+    margin: 40px auto;
+}
+
+.bx-wrapper{
+    left: 0;
+    box-shadow: none;
+    border: none;
+}
+
+#slider-area li{
+    height: 400px;
+    
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.bx-controls-direction a {
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+.bx-wrapper:hover .bx-controls-direction a{
+    opacity: 1;
+}
+
+.controlList a{
+    color: #000;
+    color: #404040;
+    text-decoration: none;
+    height: 50px;
+    /*border-bottom: 1px #3e3e3e solid;*/
+    
+    border-bottom: 0.1px rgba(62,62,62,0.1) solid;
+    
+        
+    /*box-shadow: 0px 0px 1px 0px #666666;*/
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 19px;
+    cursor: pointer;
+    
+}
+
+.profileImg{
+    width: 200px; 
+   /* box-shadow: 0px 0px 2px 0.5px #000;
+    box-shadow: 0px 0px 5px 0px #797979; */
+    border: 6px #ffffff solid;
+    position: absolute;
+    top: 100px;
+    left: 25%;
+}
+.profileFormTextInput{
+    border-radius: 10px;
+}
+.profileFormBtnInput{
+    border-radius: 10px;
+    
+}
+.profileSubmitBtn{
+    background-color: #ff6600;
+    color: #ffffff;
+    height: 45px;
+}
+
+@media only screen and (max-width: 767px) {
+    .tabcon{
+        height: 50px;
+    }
+    .tabcon button{
+        font-size: 23px;
+    }
+    #slider-area li{
+        height: 200px;
+ 
+    }
+}
+
+
+.forEnableSliding{
+    min-height: 100vh;
+    position: absolute;
+    height: fit-content!important;
+    display: none;
+    right: -110%;
+}
+
+.restmarket{
+    background-color:red;
+display:inline-block;
+}
+
+.imgbox{
+     height: 85px;
+    width: 85px;
+    vertical-align: top;
+   float: left;
+    border: 1px solid #d0d0d0;
+    margin-left: 10px;
+
+}
+.imgbox img{
+    max-width: 100%;
+    max-height: 100%;
+     min-height: 80px;
+     
+}
+.detial{
+
+}
